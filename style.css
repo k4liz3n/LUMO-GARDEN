@@ -1,0 +1,701 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+    cursor: crosshair;
+}
+
+body {
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos del nav */
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 10px;
+    width: 100%;
+    padding: 5px 0;
+    z-index: 1000;
+    outline: none;
+    border: 0.2px solid transparent;
+    background-color: transparent;
+    transition: background-color 3s ease; /* Transición suave del color de fondo */
+}
+
+/* Cambia el color del fondo al desplazar */
+.scrolled .navigation {
+    background-color: #00000000; /* Color del fondo al desplazar */
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    border: 0.2px solid transparent;
+    background-color: transparent;
+}
+
+.navigation li {
+    margin: 0 10px;
+    border: 0.2px solid transparent;
+    background-color: transparent;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    border: 0.2px solid transparent;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.navigation a:hover {
+    border-radius: 70px;
+    background-color: transparent;
+    border-color: #0011ff;
+    box-shadow: 0px 0px 150px 12px #0011ff;
+    -webkit-box-shadow: 0px 0px 150px 12px #0011ff;
+    -moz-box-shadow: 0px 0px 150px 12px #0011ff;
+    text-decoration: underline rgba(255, 255, 255, 0.137);
+    transform: rotateY(10deg);
+    transition: transform 2s ease;
+}
+
+/* Estilos del nav */
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10x 0;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+/* Cambia el color del fondo al desplazar */
+.scrolled .navigation {
+    background-color: #000000; /* Color del fondo al desplazar */
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0 1px;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; /* Ajusta el padding vertical y horizontal para acercar el borde al texto */
+}
+
+
+.navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Cambia el color de fondo al pasar el ratón */
+    border-radius: 23px; /* Añade bordes redondeados al pasar el ratón */
+}
+
+
+.box {
+    color: #4800ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container1 {
+    border: 1px solid #ffffff;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1px;
+    text-align: center;
+}
+
+
+.container span {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.container header {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    color: #fff;
+    background-color: #ffffff2d;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.input-field i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.input-field input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 0 42px 0 20px;
+    background: rgba(68, 18, 83, 0.144);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.input-field input:focus {
+    color: #fff;
+    box-shadow: 0px 0px 5px 1px #fff;
+}
+
+.input-field input[type="checkbox"] {
+    display: none;
+}
+
+.input-field label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input-field label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;left: 0;
+    transition: 0.2s;
+}
+
+.input-field input[type="checkbox"]:checked + label:before {
+    content: "";
+    background-color: #ffffff;
+    border: none;
+}
+
+.input-field input[type="checkbox"]:checked + label:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 5px;
+    color:#4800ff;
+    font-size: 12px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    transform: rotate(-45deg);
+}
+.submit {
+    width: 60%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #fff;
+    color: #ffffff;
+    cursor:context-menu;
+    transition: 0.3s;
+    justify-content: space-between;
+}
+
+.submit:hover {
+    background: #4800ff;
+    color: #ffffff;
+}
+
+.bottom {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.left label {
+    justify-content: space-between;
+}
+
+.left input[type="checkbox"] {
+    color:#4800ff;
+    background-color: #4800ff;
+    margin-right: 2px;
+}
+
+.right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    text-decoration: none !important; /* Eliminar el subrayado */
+    border-radius: 34px;
+    border-color: #fff;
+}
+
+.scroll-down i {
+    display: block;
+    padding: 7px;
+    font-size: 25px;
+    color: white;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 30px;
+    transition: all .50s ease;
+    text-decoration: none !important; /* Eliminar el subrayado */
+}
+
+.ri-download-fill {
+    text-decoration: none;
+    size: 12px;
+    font-size: 5px; /* Tamaño más pequeño */
+}
+
+.ri-download-fill:hover {
+    border-color: #4800ff;
+    box-shadow: 0px 0px 90px 50px #4800ff;
+    -webkit-box-shadow: 0px 0px 90px 50px #4800ff;
+    -moz-box-shadow: 0px 0px 90px 50px #4800ff;
+    transform: rotateY(360deg) rotateX(3deg);
+    transition: transform 4s ease;
+}
+
+
+@media (max-width: 1535px) {
+    header {
+        padding: 15px 3%;
+        transition: .2s;
+    }
+
+    .icons {
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .scroll-down {
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1460px) {
+    section {
+        padding: 0 19%;
+        transition: .2s;
+    }
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    left: -7%;
+    padding: 0 9%;
+    border-radius: 23px;
+    background: transparent;
+    transform: translateY(-50%);
+    border-radius: 23px;
+}
+
+.icons a,
+.icons .icon {
+    text-decoration: none; /* Eliminar el subrayado */
+}
+
+.icons i {
+    display: block;
+    margin: 26px 0;
+    font-size: 30px;
+    padding: 0;
+    background: #000;
+    color: white;
+    transition: all .59s ease;
+}
+
+.ri-instagram-line:hover {
+    background: none;     
+    /*box-shadow: 0px 0px 150px 50px #f837ff;
+    -webkit-box-shadow: 0px 0px 150px 50px #f837ff;
+    -moz-box-shadow: 0px 0px 150px 50px #f837ff;*/
+    transform: translateY(-7px);
+    transform: rotateY(360deg);
+    transition: transform 3s ease;
+}
+
+.ri-youtube-line:hover {
+    background: none;
+    background-color: transparent;
+    /*box-shadow: 0px 0px 150px 50px #ff0000;
+    -webkit-box-shadow: 0px 0px 150px 50px #ff0000;
+    -moz-box-shadow: 0px 0px 150px 50px #ff0000;*/
+    transform: translateY(-7px);
+    transform: rotateY(360deg);
+    transition: transform 3s ease;
+}
+
+.ri-tiktok-line:hover {
+    background: none;
+    background-color: transparent;
+    /*box-shadow: 0px 0px 150px 50px #54008b;
+    -webkit-box-shadow: 0px 0px 150px 50px #54008b;
+    -moz-box-shadow: 0px 0px 150px 50px #54008b;*/
+    transform: translateY(-7px);
+    transform: rotateY(360deg);
+    transition: transform 3s ease;
+}
+
+.contenedor {
+    width: 20%;
+    max-width: 100px;
+    max-height: 2500px;
+    margin: auto;
+    padding: 100px 0;
+    display: flex;
+    gap: 270px;
+}
+.contenedor-eventos{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    border: #fff 2px solid;
+    border-radius: 23px;
+    min-width: 200px;
+    font-weight: bold;
+    padding: 15px;
+    position:absolute relative;
+    overflow: hidden;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center center;
+    width: calc(33.33% - 20px);
+    transition: all .61s ease;
+}
+.card:hover{
+    border-color: #4800ff4d;
+    box-shadow: 0px 0px 60px 40px #4800ff3a;
+    -webkit-box-shadow: 0px 0px 60px 40px #4800ff3a;
+    -moz-box-shadow: 0px 0px 60px 40px #4800ff3a;
+}
+.card .textos{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contenedor-eventos {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.card {
+    border: #fff 2px solid;
+    border-radius: 23px;
+    min-width: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center center;
+    width: calc(33.33% - 20px);
+    transition: all .61s ease;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.about{
+    font-size: 12px;
+    color: #ffffff;
+    padding: 400px;
+}
+
+
+.about h1 {
+    font-size: 1.5vw;
+    margin-bottom: 1rem;
+  }
+  
+  .about h2 {
+    font-size: 1vw;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+
+  @media (max-width: 900px) {
+    .about h1 {
+      font-size: 6rem;
+    }
+  
+    .about h2 {
+      font-size: 2rem;
+    }
+  }
+
+.spotify-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 120px;
+    gap: 25px;
+}
+
+.spotify-embed {
+    border-radius: 12px;
+    width: 100%;
+    height: 152px;
+    border: none;
+}
+
+  /*
+  .module-border-wrap {
+    max-width: 250px;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    border-radius: 13px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient( rgba(38, 0, 255, 0.507), rgb(224, 7, 224, 0.507));
+    padding: 3px;
+    text-align: center; /* Alinear el contenido al centro
+  }
+  
+  .module {
+    border-radius: 13px;
+    background: #222;
+    color: white;
+    padding: 23px;
+
+
+  .eo{
+    mask-image: linear-gradient(
+        black 80%,
+        transparent
+    );
+  }  }
+  */
+.container {
+    position: relative;
+    width: 90%;
+    height: 90%;
+}
+
+.centered-content {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.card1 {
+    width: 1500px; /* Ajusta el ancho según sea necesario */
+    height: 800px;
+    border-radius: 0px;
+    background: none;
+    display: flex;
+    gap: 10px;
+    padding: 1px;
+}
+
+
+.card1 p {
+    width: auto;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: transparent;
+    border: 1px solid #ff5a9100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 p:hover {
+    flex: 4;
+}
+
+.card1 p span {
+    min-width: 14em;
+    padding: .15em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #ff568e4b;
+    letter-spacing: .1em;
+}
+
+.card1 p:hover span {
+    transform: rotate(0);
+}
+
+/* Estilos para la tabla */
+table {
+    width: 95%;
+    border: 1px solid #fff;
+    margin-top: 800px; /* Ajusta según sea necesario */
+    margin-left: auto; /* Centrar la tabla horizontalmente */
+    margin-right: auto; /* Centrar la tabla horizontalmente */
+    border: none; /* Elimina el borde de la tabla */
+}
+
+/* Estilos para las imágenes dentro de las celdas */
+.ropatabla {
+    width: 80%; /* Imágenes ocupan todo el ancho de la celda */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+    padding: 23px; /* Espaciado alrededor de la imagen */
+    border: 1px solid #fff; /* Elimina el borde de las imágenes */
+}
+
+.nombrepren{
+    color: white;
+}
+
+.preciopren{
+    color: white;
+}
+
+/* Estilos generales del pie de página */
+footer {
+    background-color: #000000;
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+
+/* Estilos de las columnas */
+.column {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+}
+
+/* Estilos de los encabezados */
+.footer {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilos de los enlaces */
+.footer h6 {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer h6:hover {
+    color: #000;
+}
+
+/* Estilos del texto de derechos de autor */
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.productoindividual {
+    width: 35%; /* Imágenes ocupan todo el ancho de la celda */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+    padding: 23px; /* Espaciado alrededor de la imagen */
+    margin-left: 60px;
+    margin-top: 150px;
+    border: 1px solid #fff; /* Elimina el borde de las imágenes */
+    display: inline-block; /* Ajusta el tamaño del contenedor al de la imagen */
+}
+
+.productoindividual img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción de la imagen */
+}
+
+.nombreprenda{
+    color: #fff;
+    margin-left: 850px;
+    margin-top: -700px;
+}
+.precioprenda{
+    color: #fff;
+    margin-left: 850px;
+    border-bottom: 1px solid #fff;
+}
+
+.tallaprenda{
+    color: #fff;
+    margin-left: 850px;
+}
+
+.cesta{
+    color: #fff;
+    margin-top: -30px;
+    margin-left: 1000px;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 5px 10px; /* Ajusta el espaciado entre el borde y el texto */
+}
